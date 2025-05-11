@@ -2,12 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Car Brands and Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Advanced HTML5 example with lists, images, tables, forms, and multimedia" />
+  <link rel="stylesheet" href="car.css" />
+
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Page</title>
+  <div class="inline-layout">
+    <div>
+      <button id="change-text-btn">Change Description</button>
+      <p id="description">Welcome to our car website!</p>
+    </div>
+
+    <div>
+      <button id="change-style-btn">Style Highlight</button>
+      <p id="style-text">This is the featured car section.</p>
+    </div>
+
+    <div>
+      <button id="toggle-element-btn">Toggle Extra Info</button>
+      <div id="container"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="Script.js"></script>
+<style>
+  .inline-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    background-color: #e6f0ff; /* light blue background for the section */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 87, 183, 0.1);
+  }
+
+  .inline-layout div {
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 4px solid #0057b7; /* solid blue accent */
+    border-radius: 8px;
+    min-width: 200px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #0057b7; /* main blue */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #004199; /* darker blue on hover */
+  }
+
+  p, #container {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+  }
+</style>
+
+<html lang="en">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Advanced HTML5 example with lists, images, tables, forms, and multimedia" />
   <title>Advanced HTML5 Elements and Forms</title>
-</head>
-<body>
-
   <!-- Ordered list with Roman numerals -->
   <section>
     <meta charset="UTF-8">
@@ -64,8 +137,8 @@
     color: #003366; /* Darker blue for hover */
   }
 </style>
-  </head>
   <body>
+    <h1>Welcome to Kerry's Car Galaxy</h1>
     <h1>Car Brands</h1>
     <h2>I. American Brands</h2>
     <ul>
@@ -139,106 +212,118 @@
 
   </section>
 
-  <!-- Contacts table -->
-  <section>
-    <h2>Contacts</h2>
-    <table border="1" cellspacing="0" cellpadding="8" summary="Contact list with name, address, mobile, and email">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Address</th>
-          <th>Mobile</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Motorhub Limited</td>
-          <td>42983-00100, Nairobi</td>
-          <td>+254-798-500-000</td>
-          <td>info@motorhub.co.ke</td>
-        </tr>
-        <tr>
-          <td>House of Cars Kenya</td>
-          <td>Hurlingham, Nairobi</td>
-          <td>+254-715-400-709</td>
-          <td>houseofcars@gmail.com</td>
-        </tr>
-        <tr>
-          <td>Caetano Kenya</td>
-          <td>3382-00506, Nairobi</td>
-          <td>+254-740-638=059</td>
-          <td>info@caetano.co.ke</td>
-        </tr>
-        <tr>
-          <td>ELE Cars Dealership Ltd</td>
-          <td>7289-00100, Nairobi</td>
-          <td>+254-202-000-121v</td>
-          <td>info@ele.co.ke</td>
-        </tr>
-        <tr>
-          <td>Peugeot Kenya</td>
-          <td>Nairobi, Kenya</td>
-          <td>+254-702-262-674</td>
-          <td>sales@urysia.co.ke</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <!-- Car Details Table -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1b2a; /* Deep navy blue */
+      color: #d6e6f2;
+      padding: 40px;
+    }
+
+    h2 {
+      color: #89c2d9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 15px;
+      background-color: #1b263b; /* Darker steel blue */
+      box-shadow: 0 0 10px rgba(0, 128, 255, 0.1);
+      border-radius: 10px;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: center;
+      border: 1px solid #415a77;
+      border-radius: 8px;
+    }
+
+    th {
+      background-color: #1e81b0; /* Vivid blue */
+      color: #f0f8ff; /* Pale blue */
+    }
+
+    tr:nth-child(even) {
+      background-color: #283d52; /* Mid-dark blue */
+    }
+
+    tr:nth-child(odd) {
+      background-color: #324a5f; /* Another blue tone */
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Car Details</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Year</th>
+        <th>Color</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ford</td>
+        <td>Mustang</td>
+        <td>2022</td>
+        <td>Red</td>
+      </tr>
+      <tr>
+        <td>Mercedes-Benz</td>
+        <td>C-Class</td>
+        <td>2023</td>
+        <td>White</td>
+      </tr>
+      <tr>
+        <td>BMW</td>
+        <td>X5</td>
+        <td>2021</td>
+        <td>Blue</td>
+      </tr>
+      <tr>
+        <td>Toyota</td>
+        <td>Mark X</td>
+        <td>2017</td>
+        <td>Black</td>
+      </tr>
+      <tr>
+        <td>Jeep</td>
+        <td>Wrangler</td>
+        <td>2024</td>
+        <td>Grey</td>
+      </tr>
+    </tbody>
+  </table>
 
   <!-- Registration form -->
   <section>
-    <h2>Registration Form</h2>
-    <form action="#" method="post" novalidate>
-      <!-- Name field -->
-      <label for="name">Name: <sup>*</sup></label><br />
-      <input 
-        type="text" 
-        id="name" 
-        name="name" 
-        placeholder="Enter your full name" 
-        required 
-        minlength="2" 
-        maxlength="50" 
-      /><br /><br />
+     <h2>Register for Updates</h2>
+  <form action="/submit" method="POST">
+    <label for="name">Name: <sup>*</sup></label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-      <!-- Email field -->
-      <label for="email">Email: <sup>*</sup></label><br />
-      <input 
-        type="email" 
-        id="email" 
-        name="email" 
-        placeholder="example@mail.com" 
-        required 
-      /><br /><br />
+    <label for="email">Email: <sup>*</sup></label>
+    <input type="email" id="email" name="email" placeholder="example@example.com" required>
 
-      <!-- Password field -->
-      <label for="password">Password: <sup>*</sup></label><br />
-      <input 
-        type="password" 
-        id="password" 
-        name="password" 
-        placeholder="At least 8 characters" 
-        pattern=".{8,}" 
-        title="Password must be at least 8 characters long" 
-        required 
-      /><br /><br />
-
+    <label for="password">Password: <sup>*</sup></label>
+    <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+    <label for="confirm-password">Confirm Password: <sup>*</sup></label>
+    <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
     <p><a href="forgot-password.html">Forgot Password? </a></p>
     <input type="submit" value="Login" /><br /><br />
 
-      <!-- Date of Birth -->
-      <label for="dob">Date of Birth: <sup>*</sup></label><br />
-      <input 
-        type="date" 
-        id="dob" 
-        name="dob" 
-        required 
-        max="2007-05-08" 
-        title="You must be at least 18 years old" 
-      /><br /><br />
-
-      <!-- Dropdown: Country -->
+<!-- Dropdown: Country -->
       <label for="country">Country: <sup>*</sup></label><br />
       <select id="country" name="country" required>
         <option value="" disabled selected>Select your country</option>
@@ -254,21 +339,24 @@
         <option value="brazil">Brazil</option>
       </select><br /><br />
 
-      <!-- Radio buttons: Gender -->
-      <fieldset>
-        <legend>Gender: <sup>*</sup></legend>
-        <input type="radio" id="male" name="gender" value="male" required />
-        <label for="male">Male</label><br />
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label><br />
-        <input type="radio" id="other" name="gender" value="other" />
-        <label for="other">Other</label>
-      </fieldset><br />
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+254 712 345678">
+
+    <fieldset>
+      <legend>Gender: <sup>*</sup></legend>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </fieldset>
 
       <!-- Submit button -->
       <button type="submit">Register</button>
-    </form>
-  </section>
+  </form>
 
   <!-- Multimedia: Audio and Video examples -->
   <section>
@@ -297,12 +385,10 @@
       color: #ffffff; /* White text for contrast */
       font-family: Arial, sans-serif;
     }
-  
     /* Style headings */
     h2 {
       color: #87CEEB; /* Sky blue */
     }
-  
     /* Style table borders and text */
     table {
       border: 2px solid #87CEEB; /* Sky blue border */
@@ -311,14 +397,12 @@
     th, td {
       color: #ffffff; /* White text */
     }
-  
     /* Style form elements */
     input, select, button, fieldset, legend {
       background-color: #00509e; /* Medium blue */
       color: #ffffff; /* White text */
       border: 1px solid #87CEEB; /* Sky blue border */
     }
-  
     button {
       background-color: #87CEEB; /* Sky blue */
       color: #003366; /* Dark blue text */
@@ -326,21 +410,23 @@
       border-radius: 4px;
       cursor: pointer;
     }
-  
     button:hover {
       background-color: #00509e; /* Medium blue */
       color: #ffffff; /* White text */
     }
-  
     /* Style links */
     a {
       color: #87CEEB; /* Sky blue */
       text-decoration: none;
     }
-  
     a:hover {
       color: #ffffff; /* White text */
     }
   </style>
+
+<footer>
+  <p>&copy; 2025 Kerry's Car Website</p>
+</footer>
+
 </body>
 </html>
